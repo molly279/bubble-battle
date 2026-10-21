@@ -1,0 +1,10 @@
+﻿services:
+  - type: web
+    name: bubble-battle
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: AUTO_OPEN
+        value: "0"
